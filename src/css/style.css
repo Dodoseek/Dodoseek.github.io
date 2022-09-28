@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background: #211e21;
+    height: 60px;
+    opacity: 0.9;
+}
+
+.logo{
+    line-height: 60px;
+    float: left;
+    margin-left: 390px;
+    font-size: 22px;
+    color: #fff;
+}
+
+nav{
+    float: left;
+    margin-left: 280px;
+    line-height: 60px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.nav{
+    float: left;
+    margin: 0px 13px;
+}
+
+.main{
+    background:url(../img/boy.png) 90% 100%/auto 800px no-repeat, url(../img/bg.jpg) center/1920px 1080px no-repeat;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.title__container{
+    margin: 280px 248px;
+    float: left
+}
+
+.title__container h1{
+    font-size: 75px;
+    font-weight: 800;
+    text-align: center;
+    color: #211e21;
+    line-height: 100px;
+    letter-spacing: -1px;
+}
+
+.title__container h4{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    color: #976714;
+    font-weight: 600;
+}
+
+.title__container input {
+    border: 1px solid #666666;
+    padding: 10px 10px;
+    box-shadow: 2px 2px 5px #666666;
+    margin: 40px 13px;
+    border-radius: 7px;
+    color: #a7803c; 
+    font-weight: 600;
+
+}
+
+.input_main{
+    margin-left: 300px;
+}
+
