@@ -214,7 +214,7 @@ nav {
     font-weight: 600;
     margin-top: 15px;
     background-color: #bb8322;
-
+    transition: 0.3s;
 }
 
 .right_info {
@@ -519,4 +519,9 @@ nav {
     background-color: #f9faff;
     color: #211e21;
     font-weight: 500;
+}
+
+.left_info input:hover{
+    background-color: #f9faff;
+    color: #bb8322;
 }
