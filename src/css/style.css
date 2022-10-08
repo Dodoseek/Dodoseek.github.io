@@ -24,7 +24,7 @@ main {
     color: #fff;
     opacity: 0;
     animation-name: comming;
-    animation-duration: 0.8s;
+    animation-duration: 4.5s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
 
@@ -43,7 +43,7 @@ nav {
     margin: 0px 13px;
     transition: 0.3s;
     animation-name: comming;
-    animation-duration: 0.8s;
+    animation-duration: 4.5s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -133,7 +133,7 @@ nav {
 }
 
 .skills {
-    background: url(../img/shadow.png) -0% -4%/100% 10% no-repeat, url(../img/shadow.png) 0% 104%/100% 10% no-repeat, url(../img/imgbg.jpg) 0% 0%/100% 130% no-repeat;
+    background: url(../img/shadow.png) -0% -4%/100% 10% no-repeat, url(../img/shadow.png) 0% 104%/100% 10% no-repeat, url(../img/imgbg.jpg) 0% 0%/100% 130% no-repeat fixed;
     height: 640px;
     margin-top: 110px;
     filter: brightness(1.01);
@@ -300,7 +300,7 @@ nav {
 }
 
 .statics {
-    background: url(../img/shadow.png) -0% -4%/100% 10% no-repeat, url(../img/shadow.png) 0% 104%/100% 10% no-repeat, url(../img/statistics.jpg) 100% 100%/100% 100% no-repeat;
+    background: url(../img/shadow.png) -0% -4%/100% 10% no-repeat, url(../img/shadow.png) 0% 104%/100% 10% no-repeat, url(../img/statistics.jpg) 100% 100%/100% 100% no-repeat fixed;
     height: 650px;
 }
 
@@ -356,7 +356,7 @@ nav {
 }
 
 .mycontacts {
-    background: url(../img/contact_bg.jpg);
+    background: url(../img/contact_bg.jpg) 100% 100%/100% 100% no-repeat fixed;
     height: 860px;
     opacity: 0.95;
 }
@@ -521,7 +521,74 @@ nav {
     font-weight: 500;
 }
 
-.left_info input:hover{
+.left_info input:hover {
     background-color: #f9faff;
     color: #bb8322;
+}
+
+.animate_load {
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+    animation-name: animate_load;
+    animation-duration: 3.5s;
+    z-index: 150;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate_load {
+    0% {
+        background-color: #d19021;
+        opacity: 1;
+    }
+
+    80% {
+        background-color: #d19021;
+        opacity: 1;
+    }
+
+    100% {
+        background-color: #d19021;
+        opacity: 0.1;
+        visibility: hidden;
+    }
+}
+
+.animate_container {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 400px auto;
+    background-color: #fff;
+
+}
+
+.container {
+    display: block;
+    background-color: #a5a5a5;
+    width: 50px;
+    height: 50px;
+    transform-origin: right;
+    transition-duration: 0.1s;
+    animation: main_anim 1.5s infinite;
+    
+    position: relative;
+}
+
+@keyframes main_anim {
+   0%: {
+    transform: translate(0, 0);
+  }
+ 
+  25% {
+    transform: translate(50px, 0);
+  }
+ 
+  50% {
+    transform: translate(50px, 50px);
+  }
+ 
+  75% {
+    transform: translate(0, 50px);
+  }
 }
