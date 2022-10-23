@@ -4,19 +4,20 @@ a {
 }
 
 li:hover {
-    transform: scale(1.1, 1.1);
-    color: #bb8322;
+    transform: scale(1.05, 1.05);
 }
 
 a:hover {
-    color: #bb8322;
+    color: #d9911c;
+    text-shadow: 0px 0px 10px white;
 }
 
 .menu > li {
     list-style-type: none;
     float: left;
-    font-size: 15px;
+    font-size: 17px;
     transition-duration: 0.3s;
+    opacity: 0.8;
 }
 
 li a {
@@ -34,7 +35,8 @@ nav {
 
 .logo {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .white-btn {
@@ -281,7 +283,6 @@ nav {
     box-shadow: 0px 0px 6px #cbcbcb;
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 1px;
     margin: 0 auto;
 }
 
@@ -352,7 +353,7 @@ nav {
     flex-basis: 170px;
 }
 
-.stat_item h3 {
+.stat_item div {
     font-size: 30px;
     font-weight: 800;
     letter-spacing: -1px;
@@ -382,6 +383,7 @@ nav {
     text-align: center;
 
 }
+
 
 .reviews img {
     margin-top: 40px;
@@ -572,4 +574,32 @@ nav {
     .footer{
         height: 116px;
     }
+}
+
+.active{
+    color: #de8900;
+    text-shadow: 0px 0px 20px white;
+}
+
+.border-shadow{
+    box-shadow: 0px 0px 6px #cbcbcb;
+}
+
+.animButton:hover{
+    background-color: #bb8322;
+    color: white;
+    transition: 0.6s;
+}
+
+.animButton2:hover{
+    background-color: white;
+    color: #bb8322;
+    transition: 0.6s;
+}
+
+.animButton3:hover{
+    background-color: white;
+    color: #1d181c;
+    font-weight: 600;
+    transition: 0.6s;
 }

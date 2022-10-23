@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -19,22 +21,22 @@
                     </div>
                     <div class="px-0 offset-xxl-4 offset-xl-2 offset-lg-0 col-xxl-6 col-xl-7 col-lg-8 d-none d-lg-block">
                         <div class="menu">
-                            <li><a href="#">
+                            <li><a href="#about_me">
                                     About me
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="#skills">
                                     Services
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="#cases">
                                     Cases
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="#calculation">
                                     Price List
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="#reviews">
                                     Reviews
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="#mycontacts">
                                     Contacts
                                 </a></li>
                         </div>
@@ -45,12 +47,12 @@
                                 Navigation
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                <li><a class="dropdown-item" href="#">About me</a></li>
-                                <li><a class="dropdown-item" href="#">Services</a></li>
-                                <li><a class="dropdown-item" href="#">Cases</a></li>
-                                <li><a class="dropdown-item" href="#">Price List</a></li>
-                                <li><a class="dropdown-item" href="#">Reviews</a></li>
-                                <li><a class="dropdown-item" href="#">Contacts</a></li>
+                                <li><a class="dropdown-item" href="#about_me">About me</a></li>
+                                <li><a class="dropdown-item" href="#skills">Services</a></li>
+                                <li><a class="dropdown-item" href="#cases">Cases</a></li>
+                                <li><a class="dropdown-item" href="#calculation">Price List</a></li>
+                                <li><a class="dropdown-item" href="#reviews">Reviews</a></li>
+                                <li><a class="dropdown-item" href="#mycontacts">Contacts</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,17 +69,17 @@
                             <h1>Hello!<br> I'm Andrew Glushnev</h1>
                             <h4>Full Stack Web Developer</h4>
                             <div class="input_main">
-                                <input type="button" value="About me">
-                                <input type="button" value="My Projects">
+                                <input class="animButton" type="button" value="About me">
+                                <input class="animButton" type="button" value="My Projects">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="section" id="about_me">
             <div class="container w-100">
-                <div class="row">
+                <div class="row wow fadeIn" data-wow-offset="10" data-wow-duration="2s">
                     <div class="col-lg-6 d-flex align-items-center"></div>
                     <h2 class="headers">About Me</h2>
                     <img class="images" src="img/trait.png" alt="">
@@ -87,36 +89,36 @@
                             <div class="col-8 offset-2">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ea debitis nihil quidem omnis odio, ullam reiciendis sequi earum mollitia esse libero veritatis nemo nostrum fugit a consectetur doloremque repellat pariatur recusandae sint alias quo laboriosam. Ratione sit qui fugiat in vero soluta deleniti eum quo. Error quia, totam reiciendis. <br><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa deleniti error pariatur culpa, fugit eligendi sunt at quo, doloribus, ea dicta minus corrupti voluptatum ut dolores beatae quisquam dolorem quae, ullam reiciendis. Unde assumenda dignissimos ad rem excepturi dicta atque, recusandae, illum quasi reiciendis aperiam asperiores quam, totam. Vero, quam.</p>
                             </div>
-                            <input type="button" value="Download resume">
+                            <input class="animButton" type="button" value="Download resume">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills section" id="skills">
             <div class="container">
                 <div class="row">
                     <div class="header_what">
-                        <h2 class="headers">What can I do</h2>
+                        <h2 class="headers wow bounceIn" data-wow-duration="2s">What can I do</h2>
                         <img class="images" src="img/trait.png" alt="">
                     </div>
                     <div class="skills_container d-flex justify-content-evenly flex-wrap">
-                        <div class="skill_item">
+                        <div class="skill_item wow bounceInLeft" data-wow-duration="2s">
                             <img src="img/laptop.png" alt="">
                             <h3>Web design</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, numquam!</p>
                         </div>
-                        <div class="skill_item">
+                        <div class="skill_item wow bounceInLeft" data-wow-duration="2s">
                             <img src="img/signhtml.png" alt="">
                             <h3>Development</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, numquam!</p>
                         </div>
-                        <div class="skill_item">
+                        <div class="skill_item wow bounceInLeft" data-wow-duration="2s">
                             <img src="img/rocket.png" alt="">
                             <h3>SEO Optimization</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, numquam!</p>
                         </div>
-                        <div class="skill_item">
+                        <div class="skill_item wow bounceInLeft" data-wow-duration="2s">
                             <img src="img/gramophone.png" alt="">
                             <h3>Marketing</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, numquam!</p>
@@ -125,20 +127,28 @@
                 </div>
             </div>
         </section>
-        <section class="cases">
+        <section class="cases section" id="cases">
             <div class="container">
                 <div class="row">
                     <h2 class="headers">Cases</h2>
                     <img class="images" src="img/trait.png" alt="">
-                    <img class="works" src="img/mywork.png" alt="">
                 </div>
-                <div class="info_client row">
+                <div class="row">
+                    <div class="fotorama py-3 my-4 border-shadow" data-width="100%" data-ratio="1024/600" data-allowfullscreen="true" data-nav="thumbs" data-fit="scaledown" data-transition="slide" data-clicktransition="crossfade" data-loop="true" data-autoplay="true">
+                        <img src="img/mywork.png">
+                        <img src="img/siteAdobe.png">
+                        <img src="img/siteAmazon.png">
+                        <img src="img/siteMicrosoft.jpg">
+                        <img src="img/sitePintrest.jpeg">
+                    </div>
+                </div>
+                <div class="info_client row wow bounceInRight pb-5">
                     <div class="left_info d-flex flex-column d-md-block col-md-3">
                         <h2 class="header_info">Client:</h2>
                         <h4 class="">Some company</h4>
                         <h2 class="header_info">WEBSITE:</h2>
                         <h4 class="">Some site</h4>
-                        <input type="button" value="Visit site">
+                        <input class="animButton2" type="button" value="Visit site">
                     </div>
                     <div class="right_info col-md-9">
                         <h2 class="header_info">Project name</h2>
@@ -147,9 +157,8 @@
                 </div>
             </div>
         </section>
-        <div class="bottom"></div>
-        <div class="container">
-            <section class="calculation">
+        <div class="container my-5">
+            <section class="calculation section wow bounceIn" data-wow-duration="2s" id="calculation">
                 <div class="select_container p-0 p-lg-5">
                     <h2>Cost calculation</h2>
                     <div class="selection">
@@ -195,7 +204,6 @@
                 </div>
             </section>
         </div>
-        <div class="bottom"></div>
         <section class="statics">
             <div class="statics_container">
                 <div class="container">
@@ -203,45 +211,66 @@
                     <img class="images" src="img/trait.png" alt="">
                     <div class="bottom"></div>
                     <div class="stat_item_container d-flex justify-content-evenly flex-wrap">
-                        <div class="stat_item">
+                        <div class="stat_item wow bounceIn" data-wow-duration="2s">
                             <img src="img/smile.png" alt="">
-                            <h3>120</h3>
+                            <div class="counter">120</div>
                             <p>HAPPY CUSTOMERS</p>
                         </div>
 
-                        <div class="stat_item">
+                        <div class="stat_item wow bounceIn" data-wow-duration="2s">
                             <img src="img/parentheses.png" alt="">
-                            <h3>4,600</h3>
+                            <div class="counter">4,600</div>
                             <p>HOURS OF OPERATION</p>
                         </div>
 
-                        <div class="stat_item">
+                        <div class="stat_item wow bounceIn" data-wow-duration="2s">
                             <img src="img/check.png" alt="">
-                            <h3>340</h3>
+                            <div class="counter">340</div>
                             <p>PROJECTS COMPLETED</p>
                         </div>
 
-                        <div class="stat_item">
+                        <div class="stat_item wow bounceIn" data-wow-duration="2s">
                             <img src="img/cup.png" alt="">
-                            <h3>23</h3>
+                            <div class="counter">23</div>
                             <p>AWARDS RECEIVED</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="reviews">
-            <div class="container">
+        <section class="reviews section element-animation" id="reviews">
+            <div class="container pt-4 pb-5">
                 <h2 class="headers">Reviews</h2>
                 <img class="images" src="img/trait.png" alt="">
-                <img class="mikha" src="img/mikhail.png" alt="">
-                <div class="col-8 offset-2">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloribus eaque accusamus tempore eveniet, possimus ut quo ipsum, facilis sequi, soluta a nulla illum sunt. <br> <span>Mikhail</span>, ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="fotorama" data-width="100%" data-ratio="1024/280" data-minwidth="300" data-maxheight="100%" data-height="50%" data-transition="crossfade" data-loop="true" data-autoplay="true" data-arrows="false">
+                    <div class="row">
+                        <div class="col col-lg-8 offset-lg-2">
+                            <img class="mikha" src="img/mikhail.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloribus eaque accusamus tempore eveniet, possimus ut quo ipsum, facilis sequi, soluta a nulla illum sunt. <br> <span>Mikhail</span>, ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-8 offset-lg-2">
+                            <img class="mikha" src="img/female.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloribus eaque accusamus tempore eveniet, possimus ut quo ipsum, facilis sequi, soluta a nulla illum sunt. <br> <span>Female</span>, ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-8 offset-lg-2">
+                            <img class="mikha" src="img/anonimus.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloribus eaque accusamus tempore eveniet, possimus ut quo ipsum, facilis sequi, soluta a nulla illum sunt. <br> <span>Anonimus</span>, ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-8 offset-lg-2">
+                            <img class="mikha" src="img/super_anonimus.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloribus eaque accusamus tempore eveniet, possimus ut quo ipsum, facilis sequi, soluta a nulla illum sunt. <br> <span>Super_Anonimus</span>, ipsum dolor sit amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>
                 </div>
-                <img class="point" src="img/points.png" alt="">
             </div>
         </section>
-        <section class="mycontacts">
+        <section class="mycontacts section" id="mycontacts">
             <div class="container">
                 <div class="mycontacts_container">
                     <h2 class="headers">My contacts</h2>
@@ -275,7 +304,7 @@
                         </div>
                         <input type="text" placeholder="Message">
                     </div>
-                    <input type="button" value="Send">
+                    <input class="animButton3" type="button" value="Send">
                     <div class="image">
                         <img class="image_contact" src="img/facebook.png" alt="">
                         <img class="image_contact" src="img/twitter.png" alt="">
@@ -298,7 +327,17 @@
             </div>
         </footer>
     </main>
+    <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="js/myScript.js"></script>
 </body>
 
 </html>
