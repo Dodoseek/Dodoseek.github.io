@@ -142,7 +142,7 @@
                         <img src="img/sitePintrest.jpeg">
                     </div>
                 </div>
-                <div class="info_client row wow bounceInRight pb-5" data-wow-duration="3s">
+                <div class="info_client row pb-5">
                     <div class="left_info d-flex flex-column d-md-block col-md-3">
                         <h2 class="header_info">Client:</h2>
                         <h4 class="">Some company</h4>
@@ -158,35 +158,35 @@
             </div>
         </section>
         <div class="container my-5">
-            <section class="calculation section wow bounceIn" data-wow-duration="3s" id="calculation">
+            <section class="calculation section" id="calculation">
                 <div class="select_container p-0 p-lg-5">
                     <h2>Cost calculation</h2>
                     <div class="selection">
                         <div class="select_item">
                             <h3>SITE TYPE</h3>
-                            <select name="Select an item..." id="1">
+                            <select name="Select an item..." id="itemOne">
                                 <option value="1" selected disabled>Select an item...</option>
-                                <option value="2">Business card site</option>
-                                <option value="3">Corporate website</option>
-                                <option value="4">Online store</option>
+                                <option value="Business">Business card site</option>
+                                <option value="Corporate">Corporate website</option>
+                                <option value="Online">Online store</option>
                             </select>
                         </div>
                         <div class="select_item">
                             <h3>DESIGN</h3>
-                            <select name="Select an item..." id="2">
+                            <select name="Select an item..." id="itemTwo">
                                 <option value="1" selected disabled>Select an item...</option>
-                                <option value="2">Template</option>
-                                <option value="3">Unique</option>
-                                <option value="4">Transcendent</option>
+                                <option value="Template">Template</option>
+                                <option value="Unique">Unique</option>
+                                <option value="Transcendent">Transcendent</option>
                             </select>
                         </div>
                         <div class="select_item">
                             <h3>ADAPTABILITY</h3>
-                            <select name="Select an item..." id="3">
+                            <select name="Select an item..." id="itemThree">
                                 <option value="1" selected disabled>Select an item...</option>
-                                <option value="2">PC only</option>
-                                <option value="3">Only mobile devices</option>
-                                <option value="4">PC and mobile devices</option>
+                                <option value="PC">PC only</option>
+                                <option value="mobile">Only mobile devices</option>
+                                <option value="all">PC and mobile devices</option>
                             </select>
                         </div>
                     </div>
@@ -196,9 +196,9 @@
                             <h3>Deadlines</h3>
                             <h3>Cost</h3>
                         </div>
-                        <div class="score">
-                            <p>0</p>
-                            <p>0</p>
+                        <div>
+                            <p class="score">0</p>
+                            <p class="score">0</p>
                         </div>
                     </div>
                 </div>
@@ -211,38 +211,38 @@
                     <img class="images" src="img/trait.png" alt="">
                     <div class="bottom"></div>
                     <div class="stat_item_container d-flex justify-content-evenly flex-wrap">
-                        <div class="stat_item wow bounceIn" data-wow-duration="3s">
+                        <div class="stat_item wow bounceIn" data-wow-duration="2s">
                             <img src="img/smile.png" alt="">
-                            <div class="counter">120</div>
+                            <div class="spincrement">120</div>
                             <p>HAPPY CUSTOMERS</p>
                         </div>
 
-                        <div class="stat_item wow bounceIn" data-wow-duration="3s">
+                        <div class="stat_item wow bounceIn" data-wow-duration="2s">
                             <img src="img/parentheses.png" alt="">
-                            <div class="counter">4,600</div>
+                            <div class="spincrement">4600</div>
                             <p>HOURS OF OPERATION</p>
                         </div>
 
-                        <div class="stat_item wow bounceIn" data-wow-duration="3s">
+                        <div class="stat_item wow bounceIn" data-wow-duration="2s">
                             <img src="img/check.png" alt="">
-                            <div class="counter">340</div>
+                            <div class="spincrement">340</div>
                             <p>PROJECTS COMPLETED</p>
                         </div>
 
-                        <div class="stat_item wow bounceIn" data-wow-duration="3s">
+                        <div class="stat_item wow bounceIn" data-wow-duration="2s">
                             <img src="img/cup.png" alt="">
-                            <div class="counter">23</div>
+                            <div class="spincrement">23</div>
                             <p>AWARDS RECEIVED</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="reviews section element-animation" id="reviews">
+        <section class="reviews section" id="reviews">
             <div class="container pt-4 pb-5">
                 <h2 class="headers">Reviews</h2>
                 <img class="images" src="img/trait.png" alt="">
-                <div class="fotorama" data-width="100%" data-ratio="1024/280" data-minwidth="300" data-maxheight="100%" data-height="50%" data-transition="crossfade" data-loop="true" data-autoplay="true" data-arrows="false">
+                <div class="fotorama fotoramaUnic" data-width="100%" data-height="65%" data-transition="crossfade" data-loop="true" data-autoplay="true" data-arrows="false">
                     <div class="row">
                         <div class="col col-lg-8 offset-lg-2">
                             <img class="mikha" src="img/mikhail.png" alt="">
@@ -328,15 +328,14 @@
         </footer>
     </main>
     <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
 
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
     <script src="js/myScript.js"></script>
 </body>
 
