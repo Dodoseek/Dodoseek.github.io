@@ -1,10 +1,25 @@
+@font-face {
+    font-family: 'FranklinGothic';
+    src: url('../fonts/FranklinGothic-Medium.eot');
+    src: url('../fonts/FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FranklinGothic-Medium.woff2') format('woff2'),
+        url('../fonts/FranklinGothic-Medium.woff') format('woff'),
+        url('../fonts/FranklinGothic-Medium.ttf') format('truetype'),
+        url('../fonts/FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 a {
     text-decoration: none;
     color: #fff;
+    transition: 0.2s;
 }
 
 li:hover {
     transform: scale(1.05, 1.05);
+    list-style-type: none;
 }
 
 a:hover {
@@ -37,7 +52,13 @@ nav {
     color: #fff;
     font-size: 20px;
     text-align: center;
+    transition-duration: 0.3s;
 }
+
+.logo:hover{
+    transform: scale(1.05, 1.05);
+}
+
 
 .white-btn {
     color: #fff;
@@ -486,8 +507,8 @@ nav {
     width: 100%;
 }
 
-@media(max-width:767px){
-    .textarea{
+@media(max-width:767px) {
+    .textarea {
         width: 78%;
     }
 }
@@ -512,38 +533,38 @@ nav {
     margin-top: 20px;
 }
 
-@media(max-width:1399px){
-    .mycontacts{
+@media(max-width:1399px) {
+    .mycontacts {
         height: 1000px;
     }
 }
 
-@media(max-width:767px){
-    .mycontacts{
+@media(max-width:767px) {
+    .mycontacts {
         height: 1150px;
     }
 }
 
-@media(max-width:530px){
-    .mycontacts{
+@media(max-width:530px) {
+    .mycontacts {
         height: 1150px;
     }
 }
 
-@media(max-width:414px){
-    .mycontacts{
+@media(max-width:414px) {
+    .mycontacts {
         height: 1180px;
     }
 }
 
-@media(max-width:379px){
-    .mycontacts{
+@media(max-width:379px) {
+    .mycontacts {
         height: 1250px;
     }
 }
 
-@media(max-width:340px){
-    .mycontacts{
+@media(max-width:340px) {
+    .mycontacts {
         height: 1280px;
     }
 }
@@ -570,36 +591,41 @@ nav {
     padding-top: 40px;
 }
 
-@media(max-width:393px){
-    .footer{
+@media(max-width:393px) {
+    .footer {
         height: 116px;
     }
 }
 
-.active{
-    color: #de8900;
+.active {
+    display: inline-block;
     text-shadow: 0px 0px 20px white;
+    color: #de8900;
+    transition: 0.2s;
+    transform: scale(1.15, 1.15);
 }
 
-.border-shadow{
+
+.border-shadow {
     box-shadow: 0px 0px 6px #cbcbcb;
 }
 
-.animButton:hover{
+.animButton:hover {
     background-color: #bb8322;
     color: white;
     transition: 0.6s;
 }
 
-.animButton2:hover{
+.animButton2:hover {
     background-color: white;
     color: #bb8322;
     transition: 0.6s;
 }
 
-.animButton3:hover{
+.animButton3:hover {
     background-color: white;
     color: #1d181c;
     font-weight: 600;
     transition: 0.6s;
 }
+
