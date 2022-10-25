@@ -154,6 +154,6 @@ $(document).ready(function () {
         $('.score:last').text(Cost + '$');
     });
 
-    // Всплывающее окно
+    new WOW().init();
 
 });
